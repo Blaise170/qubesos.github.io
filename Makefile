@@ -1,12 +1,7 @@
-JEKYLLOPTS = --verbose --trace
-
 all:
-	jekyll build $(JEKYLLOPTS)
+	mv Gemfile _Gemfile && docker-compose up && mv _Gemfile Gemfile
 
 clean:
 	$(RM) -r _site
 
-serve:
-	jekyll serve --watch $(JEKYLLOPTS)
-
-.PHONY: all clean serve
+.PHONY: all clean

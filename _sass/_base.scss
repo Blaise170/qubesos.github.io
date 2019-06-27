@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6,
 hr, p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: 25px;
 }
 
 
@@ -40,11 +40,31 @@ ul, ol, dl, figure,
  h4,
  h5,
  h6 {
-  margin: 0 0 35px;
+  padding: 0 0 10px;
+  margin: 0 0 25px;
   font-weight: 200;
   font-family: $ostrich;
   color: $gray-base;
   letter-spacing: 1px;
+}
+
+ h1,
+ h2 {
+  border-bottom: 1px solid $gray-light;
+}
+
+ h1.outer-heading,
+ h2.outer-heading {
+  border-bottom: 0;
+
+  a.heading-link {
+   padding: 0 0 10px;
+   margin: 0 0 25px;
+   font-weight: 200;
+   font-family: $ostrich;
+   color: $gray-base;
+   letter-spacing: 1px;
+  }
 }
 
  h1 i,
@@ -92,7 +112,6 @@ img {
 a {
   color: $brand-primary;
   text-decoration: none;
-  font-size: 14px;
   font-family: $base-font-family-bold;
   font-weight: bold;
   border-bottom: 0px solid transparent;
@@ -123,9 +142,9 @@ i {
 
 p {
   margin: 0 0 25px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: $gray-base;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $color-black;
 }
 
 
@@ -157,22 +176,19 @@ blockquote {
  */
 pre,
 code {
-    font-size: 14px;
-    border: 1px solid $gray;
-    border-radius: $border-radius-base;
     background-color: $color-code-bg;
     color: $color-black;
 }
 
 code {
-    padding-top: 2px;
-    padding-right: 5px;
-    padding-bottom: 1px;
-    padding-left: 5px;
+    padding-top: 0.3em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+    padding-left: 0.5em;
 }
 
 pre {
-    padding: 6px 10px;
+    padding: 14px;
     overflow-x: auto;
 
     > code {

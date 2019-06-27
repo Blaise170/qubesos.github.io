@@ -1,35 +1,15 @@
-- title: The Basics
-  folder: basics
+- category: Introduction
+  folder: introduction
 
-- title: Choosing Your Hardware
-  folder: hardware
+- category: Project Security
+  folder: project-security
 
-- title: Installing & Upgrading Qubes
-  folder: installing
+- category: User Documentation
+  folder: user
 
-- title: Common Tasks
-  folder: common-tasks
+- category: Developer Documentation
+  folder: developer
 
-- title: Managing Operating Systems
-  folder: managing-os
+- category: External Documentation
+  folder: external
 
-- title: Security Guides
-  folder: security
-
-- title: Privacy Guides
-  folder: privacy
-
-- title: Configuration Guides
-  folder: configuration
-
-- title: Customization Guides
-  folder: customization
-
-- title: Troubleshooting
-  folder: troubleshooting
-
-- title: Reference Pages
-  folder: reference
-
-- title: For Developers
-  folder: developers

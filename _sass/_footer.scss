@@ -13,8 +13,9 @@
     }
   }
 
-  a {
+  p, a {
     color: $gray-darker;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
   }
@@ -25,7 +26,7 @@
 
 }
 
-.footer-logo {
+.footer-logo a {
   padding: $spacing-unit;
   font-family: $ostrich;
   font-size: 30px;

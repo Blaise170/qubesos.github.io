@@ -2,7 +2,7 @@
 
 #tour {
 
-  #player {
+  #player0 #player1 {
     width: 702px;
     height: 395px;
     border: 1px solid $gray-light;
@@ -13,7 +13,7 @@
     }
   }
 
-  #player-menu {
+  #player0-menu, #player1-menu {
 
     li {
       padding-bottom: ($spacing-unit / 2);
@@ -30,7 +30,7 @@
 @media(max-width: $screen-md-max) {
 
   #tour {
-    #player {
+    #player0, #player1 {
       width: 100%;
     }
   }
@@ -45,7 +45,11 @@
 
 #team-core {
   .team {
-    padding-bottom: $padding-large-vertical * 4;
+    padding-top: $padding-large-vertical * 2;
+    padding-bottom: $padding-large-vertical * 2;
+  }
+  .team:first-child {
+    padding-top: 0px;
   }
   .team:last-child {
     padding-bottom: 0px;
@@ -82,6 +86,10 @@
     color: $gray-dark;
   }
 
+  .link {
+    white-space: nowrap;
+  }
+
   .fingerprint {
     display: block;
     background-color: $gray-lighter;
@@ -91,4 +99,20 @@
     font-family: $font-family-monospace;
   }
 
+}
+
+.partners {
+  table {
+      display: block;
+      overflow: auto;
+      border-collapse: collapse;
+  }
+  td {
+      border: 1px solid #ddd;
+      padding: 12px 24px;
+  }
+  td:first-child {
+      width: 25%;
+      text-align: center;
+  }
 }

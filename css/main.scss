@@ -4,25 +4,25 @@
 @charset "utf-8";
 
 // Custom - Fonts
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-family-italic: Helvetica, Arial, sans-serif;
-$base-font-family-bold: Helvetica, Arial, sans-serif;
-$base-font-family-bold-italic: "Opens Sans Bold Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", Arial, sans-serif;
+$base-font-family-italic: "Open Sans Italic", Arial, sans-serif;
+$base-font-family-bold: "Open Sans Bold", Arial, sans-serif;
+$base-font-family-bold-italic: "Open Sans Bold Italic", Arial, sans-serif;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.85;
-$base-line-height: 1.5;
+$base-line-height: 1.6em;
 
-$ostrich: "Ostrich Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ostrich-heavy: "Ostrich Heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ostrich: "Ostrich Medium", Arial, sans-serif;
+$ostrich-heavy: "Ostrich Heavy", Arial, sans-serif;
 
-$open-sans: "Opens Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$open-sans-italic: "Opens Sans Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$open-sans-bold: "Opens Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$open-sans-bold-italic: "Opens Sans Bold Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$open-sans: "Open Sans", Arial, sans-serif;
+$open-sans-italic: "Open Sans Italic", Arial, sans-serif;
+$open-sans-bold: "Open Sans Bold", Arial, sans-serif;
+$open-sans-bold-italic: "Open Sans Bold Italic", Arial, sans-serif;
 
 $color-white: #FFFFFF;
-$color-black: #111111;
-$color-code-bg: #F0F2F5;
+$color-black: #000000;
+$color-code-bg: #eff2f6;
 $color-qube-dark: #99bfff;
 $color-qube-middle: #63a0ff;
 $color-qube-light: #3874d8;
@@ -106,3 +106,64 @@ $on-laptop-wide:   1150px;
         "pages",
 				"toc",
         "docs";
+
+// Global small screen fix
+@media (max-width: $screen-sm-min) {
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      padding: 5px;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+}
+
+// Custom - Icon Colors
+.black-icon         {color: #000000;}
+.fa-twitter         {color: #00aced;}
+.fa-twitter-square  {color: #00aced;}
+.fa-reddit          {color: #ff8b60;}
+.fa-reddit-square   {color: #ff8b60;}
+.fa-facebook        {color: #3b5998;}
+.fa-facebook-square {color: #3b5998;}
+.fa-stack-exchange  {color: #3399ff;}
+.fa-rss-square      {color: #f26f22;}
+
+// Custom - Article Tables
+article table {
+    display: block;
+    overflow: auto;
+    border-collapse: collapse;
+    white-space: nowrap;
+    margin: 0 0 25px;
+}
+article td, article th {
+    border: 1px solid #ddd;
+    padding: 12px 24px;
+}
+article tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+article tr:hover {
+    background-color: #ddd;
+}
+article th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: $color-qube-light;
+    color: white;
+}
+article tr.center {
+    th {
+        text-align: center;
+    }
+}
+

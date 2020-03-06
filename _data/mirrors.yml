@@ -16,11 +16,11 @@
    urls:
    - url: https://mirrors.dotsrc.org/qubes/
 
- - organization: Crypto World
-   org_url: https://cryptoworld.is/
-   location: Iceland
+ - organization: Universal Layer
+   org_url: https://ulayer.net/
+   location: Finland
    urls:
-   - url: https://mirror.cryptoworld.is/qubes/
+   - url: https://mirrors.ulayer.net/qubes
 
  - organization: Linux Users' Group of Durgapur
    org_url: https://dgplug.org/
@@ -58,13 +58,6 @@
    urls:
    - url: https://ftp.acc.umu.se/mirror/qubes-os.org/
 
- - organization: LinuxPizza
-   org_url: https://linux.pizza/
-   location: Sweden
-   urls:
-   - url: http://mirror.linux.pizza/qubes-os.org/
-   - url: http://lxpizzamm6twgep2.onion/
-
  - organization: UKFast
    org_url: https://www.ukfast.co.uk/
    location: United Kingdom
@@ -88,6 +81,12 @@
    location: United States
    urls:
    - url: https://archive.org/download/QubesOS
+
+ - organization: Purdue Linux Users Group
+   org_url: https://plug-mirror.rcac.purdue.edu/info.html
+   location: United States
+   urls:
+   - url: https://plug-mirror.rcac.purdue.edu/qubes/
 
  - organization: The Linux Kernel Archives
    org_url: https://www.kernel.org/
